@@ -1,0 +1,70 @@
+exemptVehicleTypes:
+  - Motorbike
+  - Tractor
+  - Emergency
+  - Diplomat
+  - Foreign
+  - Military
+exemptMonths:
+  - July
+exemptWeekDays:
+  - Saturday
+  - Sunday
+exemptDatesRaw:
+  - 2022-01-05
+  - 2022-01-06
+  - 2022-04-14
+  - 2022-04-15
+  - 2022-04-18
+  - 2022-05-25
+  - 2022-05-26
+  - 2022-06-06
+  - 2022-06-24
+  - 2022-11-04
+  - 2026-12-26
+maxDailyFare: 60
+fares:
+  -
+    hour: 0
+    minute: 0
+    price: 0
+  -
+    hour: 6
+    minute: 0
+    price: 9
+  -
+    hour: 6
+    minute: 30
+    price: 16
+  -
+    hour: 7
+    minute: 0
+    price: 22
+  -
+    hour: 8
+    minute: 0
+    price: 16
+  -
+    hour: 8
+    minute: 30
+    price: 9
+  -
+    hour: 15
+    minute: 0
+    price: 16
+  -
+    hour: 15
+    minute: 30
+    price: 22
+  -
+    hour: 17
+    minute: 0
+    price: 16
+  -
+    hour: 18
+    minute: 0
+    price: 9
+  -
+    hour: 18
+    minute: 30
+    price: 0
