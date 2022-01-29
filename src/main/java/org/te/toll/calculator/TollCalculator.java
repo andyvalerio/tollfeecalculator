@@ -29,7 +29,7 @@ public class TollCalculator {
         DayOfWeek passagesDay = passageDateTime.getDayOfWeek();
         Month passagesMonth = passageDateTime.getMonth();
         long passagesSameDay = passages.stream()
-                .filter(x -> x.getDayOfWeek().equals(passagesDay)).count();
+                .filter(x -> x.toLocalDate().equals(passageDateTime.toLocalDate())).count();
         if (passagesSameDay != passages.size()) {
             throw new MultipleDaysPassages();
         }

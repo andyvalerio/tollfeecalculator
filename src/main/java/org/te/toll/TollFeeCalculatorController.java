@@ -27,14 +27,14 @@ public class TollFeeCalculatorController {
     private final TollCalculator calculator;
 
     @ApiOperation(value = "This method returns the current daily toll-fee for the vehicle for the input date and after" +
-            "considering the input passage.")
+            " considering the input passage.")
     @RequestMapping(value = "/get-fee/{vehicleType}/{registration}/{date}", method= RequestMethod.GET)
     public ResponseEntity<?> getFee(
             @ApiParam(value = "The type of vehicle", required = true, defaultValue = "Car")
             @PathVariable VehicleType vehicleType,
             @ApiParam(value = "The registration number of the vehicle", required = true, defaultValue = "ULJ985")
             @PathVariable String registration,
-            @ApiParam(value = "The current station passing time", required = true, defaultValue = "2021-10-31 16:01:00")
+            @ApiParam(value = "The current station passing time", required = true, defaultValue = "2022-10-31 16:01:00")
             @PathVariable String date) throws MultipleDaysPassages {
 
         if (registration.length() < 2 || registration.length() > 12) {
